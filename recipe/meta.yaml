@@ -38,6 +38,8 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: Python S-expression emulation using tuple-like objects.
+  description: |
+    Python S-expression emulation using tuple-like objects.
   dev_url: https://github.com/pythological/etuples
   doc_url: https://github.com/pythological/etuples
 
