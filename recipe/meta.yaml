@@ -7,7 +7,6 @@ package:
 source:
   url: https://pypi.io/packages/source/e/etuples/etuples-{{ version }}.tar.gz
   sha256: babb99e09428e7985d2baf5537f38ca1e47b596e1fadbef7db12388cab0a92de
-  patches:
 
 build:
   number: 0
