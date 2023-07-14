@@ -11,29 +11,35 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . -vv
-  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python
     - setuptools
+    - wheel
   run:
-    - python >=3.6
+    - python
     - cons
     - multipledispatch
 
 test:
   imports:
     - etuples
+  requires:
+    - pip
+  commands:
+    - pip check
 
 about:
   home: https://github.com/pythological/etuples
   license: Apache-2.0
-  summary: Python S-expression emulation using tuple-like objects.
+  license_family: Apache
   license_file: LICENSE
+  summary: Python S-expression emulation using tuple-like objects.
   dev_url: https://github.com/pythological/etuples
+  doc_url: https://github.com/pythological/etuples
 
 extra:
   recipe-maintainers:
