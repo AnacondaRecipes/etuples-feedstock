@@ -20,6 +20,8 @@ requirements:
     - wheel
   run:
     - python
+    - cons
+    - multipledispatch
 
 test:
   imports:
